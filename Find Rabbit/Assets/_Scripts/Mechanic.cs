@@ -10,14 +10,36 @@ public class Mechanic : MonoBehaviour
     public RectTransform bunny;
     public List<RectTransform> hats;
 
-    public float duration = .5f;
+    public float duration = 1.7f;
 
     private bool gameStarted = false;
-    private bool correctAnswer = false;
+
+    private int bestScore = 0;
+    private int score = 0;
+
+    public Text scoreText;
+    public Text goScoreText;
+    public Text goBestScoreText;
+
+    public GameObject gameOverCanvas;
+    private bool paused = false;
+    public GameObject pauseCanvas;
 
     private void Start()
     {
+        bestScore = PlayerPrefs.GetInt("Best score");
+
+        gameOverCanvas.gameObject.SetActive(false);
+        pauseCanvas.gameObject.SetActive(false);
+
         StartCoroutine(GameStart());
+    }
+
+    private void Update()
+    {
+        scoreText.text = $"Score: {score}";
+        goScoreText.text = $"Score: {score}";
+        goBestScoreText.text = $"Record: {bestScore}";
     }
 
     private IEnumerator GameStart()
@@ -28,6 +50,7 @@ public class Mechanic : MonoBehaviour
         // Ground all hats
         for (int i = 0; i < hats.Count; i++)
         {
+            hats[i].pivot = new Vector2(0.5f, 0.5f);
             StartCoroutine(MoveToTarget(hats[i], new Vector2(hats[i].anchoredPosition.x, -420f)));
         }
 
@@ -66,48 +89,52 @@ public class Mechanic : MonoBehaviour
         bunny.transform.position = hats[1].transform.position;
         bunny.gameObject.SetActive(true);
 
+        gameStarted = false;
+
     }
 
     private void GameWin()
     {
-        correctAnswer = true;
         StartCoroutine(UngroundHats());
-        // score++;
-        // conitue game;
+        score++;
 
+        if (score > bestScore)
+        {
+            bestScore = score;
+            PlayerPrefs.SetInt("Best score", score);
+        }
+
+        // conitue game;
         StartCoroutine(GameStart());
     }
 
     private void GameLose()
     {
-
-
+        StartCoroutine(UngroundHats());
         // game over canvas set active true;
         // game over;
 
-        StartCoroutine(GameStart());
+        gameOverCanvas.gameObject.SetActive(true);
+
     }
 
     private IEnumerator UngroundHats()
     {
-        yield return new WaitUntil(() => correctAnswer == true);
-        correctAnswer = false;
-
         // Unground all hats && remove all action listeners
         for (int i = 0; i < hats.Count; i++)
         {
+            hats[i].pivot = new Vector2(0.5f, -1.5f);
             hats[i].GetComponent<Button>().onClick.RemoveAllListeners();
         }
 
-        StartCoroutine(MoveToTarget(hats[0], new Vector2(-327f, -100f)));
-        StartCoroutine(MoveToTarget(hats[1], new Vector2(0f, -100f)));
-        StartCoroutine(MoveToTarget(hats[2], new Vector2(327f, -100f)));
-
         yield return new WaitForSeconds(duration + 0.25f);
+
+        gameStarted = true;
+
     }
 
 
-    private IEnumerator MoveToTarget(RectTransform currentPosition, Vector3 targetPosition)
+    private IEnumerator MoveToTarget(RectTransform currentPosition, Vector2 targetPosition)
     {
         float elapsedTime = 0;
         Vector3 startPosition = currentPosition.anchoredPosition;
@@ -125,6 +152,13 @@ public class Mechanic : MonoBehaviour
     public void Shuffle()
     {
         gameStarted = true;
+    }
+
+    public void SetPause()
+    {
+        paused = !paused;
+        Time.timeScale = (paused == true) ? 0.0f : 1.0f;
+        pauseCanvas.SetActive(paused);
     }
 
 }

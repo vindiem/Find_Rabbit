@@ -60,6 +60,7 @@
   <ItemGroup>
     <Compile Include="Assets\_Scripts\Mechanic.cs" />
     <Compile Include="Assets\_Scripts\SceneLoader.cs" />
+    <Compile Include="Assets\_Scripts\VolumeSettings.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
