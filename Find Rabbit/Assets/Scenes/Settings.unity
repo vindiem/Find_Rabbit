@@ -1146,13 +1146,25 @@ MonoBehaviour:
   m_FillRect: {fileID: 471323753}
   m_HandleRect: {fileID: 1524997437}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.001
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2126825762}
+        m_TargetAssemblyTypeName: VolumeSettings, Assembly-CSharp
+        m_MethodName: SetVolumeValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1202698848
 GameObject:
   m_ObjectHideFlags: 0
@@ -1236,13 +1248,25 @@ MonoBehaviour:
   m_FillRect: {fileID: 866158141}
   m_HandleRect: {fileID: 1648094538}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.001
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2126825762}
+        m_TargetAssemblyTypeName: VolumeSettings, Assembly-CSharp
+        m_MethodName: SetVolumeValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1263052449
 GameObject:
   m_ObjectHideFlags: 0
@@ -1850,6 +1874,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2c3057adfbbe2a45980f04e106633f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clickSound: {fileID: 8300000, guid: 4b3ba4f38f2dc4b4ab9f688a501279e4, type: 3}
 --- !u!1 &1850617531
 GameObject:
   m_ObjectHideFlags: 0

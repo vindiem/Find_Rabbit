@@ -25,8 +25,12 @@ public class Mechanic : MonoBehaviour
     private bool paused = false;
     public GameObject pauseCanvas;
 
+    private AudioSource soundSource;
+    [SerializeField] private AudioClip correctSound;
+
     private void Start()
     {
+        soundSource = GameObject.FindGameObjectWithTag("Sound").GetComponent<AudioSource>();
         bestScore = PlayerPrefs.GetInt("Best score");
 
         gameOverCanvas.gameObject.SetActive(false);
@@ -95,6 +99,7 @@ public class Mechanic : MonoBehaviour
 
     private void GameWin()
     {
+        soundSource.PlayOneShot(correctSound);
         StartCoroutine(UngroundHats());
         score++;
 

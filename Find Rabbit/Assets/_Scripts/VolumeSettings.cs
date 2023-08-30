@@ -19,6 +19,9 @@ public class VolumeSettings : MonoBehaviour
         musicSliderValue = PlayerPrefs.GetFloat("Music volume");
         soundSliderValue = PlayerPrefs.GetFloat("Sound volume");
 
+        musicSliderValue = (musicSliderValue == 0) ? 1 : musicSliderValue;
+        soundSliderValue = (soundSliderValue == 0) ? 1 : soundSliderValue;
+
         musicSlider.value = musicSliderValue;
         soundSlider.value = soundSliderValue;
     }
@@ -33,6 +36,18 @@ public class VolumeSettings : MonoBehaviour
 
         PlayerPrefs.SetFloat("Music volume", musicSliderValue);
         PlayerPrefs.SetFloat("Sound volume", soundSliderValue);
-
     }
+
+    public void SetVolumeValue()
+    {
+        AudioSource musicSource = GameObject.FindGameObjectWithTag("Music").GetComponent<AudioSource>();
+        AudioSource soundSource = GameObject.FindGameObjectWithTag("Sound").GetComponent<AudioSource>();
+
+        float musicVolume = PlayerPrefs.GetFloat("Music volume");
+        float soundVolume = PlayerPrefs.GetFloat("Sound volume");
+
+        musicSource.volume = musicVolume;
+        soundSource.volume = soundVolume;
+    }
+
 }

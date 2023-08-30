@@ -1101,6 +1101,7 @@ MonoBehaviour:
   goBestScoreText: {fileID: 1508633985}
   gameOverCanvas: {fileID: 1876633963}
   pauseCanvas: {fileID: 1524378517}
+  correctSound: {fileID: 8300000, guid: 1b33847436ee32940a79e17cdecc57ea, type: 3}
 --- !u!1 &877057910
 GameObject:
   m_ObjectHideFlags: 0
@@ -1369,6 +1370,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2c3057adfbbe2a45980f04e106633f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clickSound: {fileID: 8300000, guid: 4b3ba4f38f2dc4b4ab9f688a501279e4, type: 3}
 --- !u!1 &1005231703
 GameObject:
   m_ObjectHideFlags: 0

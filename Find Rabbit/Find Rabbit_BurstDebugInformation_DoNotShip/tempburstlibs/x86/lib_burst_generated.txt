@@ -1,4 +1,4 @@
-Library: C:\Users\timur\Desktop\Find_Rabbit\Find Rabbit\Temp\BurstOutput\tempburstlibs\x86\lib_burst_generated
+Library: D:\Work()\.projects\Find_Rabbit\Find Rabbit\Temp\BurstOutput\tempburstlibs\x86\lib_burst_generated
 --platform=Android
 --backend=burst-llvm-15
 --target=X86_SSE4
@@ -22,10 +22,10 @@ Library: C:\Users\timur\Desktop\Find_Rabbit\Find Rabbit\Temp\BurstOutput\tempbur
 --assembly-defines=Unity.Mathematics;
 --assembly-defines=UnityEngine;
 --generate-link-xml=Temp\burst.link.xml
---temp-folder=C:\Users\timur\Desktop\Find_Rabbit\Find Rabbit\Temp\Burst
---key-folder=C:/Program Files/Unity/Hub/Editor/2022.3.7f1/Editor/Data/PlaybackEngines/AndroidPlayer
---decode-folder=C:\Users\timur\Desktop\Find_Rabbit\Find Rabbit\Library\Burst
---output=C:\Users\timur\Desktop\Find_Rabbit\Find Rabbit\Temp\BurstOutput\tempburstlibs\x86\lib_burst_generated
+--temp-folder=D:\Work()\.projects\Find_Rabbit\Find Rabbit\Temp\Burst
+--key-folder=C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/PlaybackEngines/AndroidPlayer
+--decode-folder=D:\Work()\.projects\Find_Rabbit\Find Rabbit\Library\Burst
+--output=D:\Work()\.projects\Find_Rabbit\Find Rabbit\Temp\BurstOutput\tempburstlibs\x86\lib_burst_generated
 --pdb-search-paths=Temp/ManagedSymbols/
 
 --method=Unity.Burst.BurstCompiler+BurstCompilerHelper, Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::IsBurstEnabled()--8c2be93e18276203cbd918daa2748a10

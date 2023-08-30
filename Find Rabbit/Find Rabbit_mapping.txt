@@ -1,7 +1,7 @@
 # compiler: R8
 # compiler_version: 3.1.66
-# min_api: 22
-# pg_map_id: e37141a
+# min_api: 23
+# pg_map_id: 22b059e
 # common_typos_disable
 # {"id":"com.android.tools.r8.mapping","version":"1.0"}
 bitter.jnibridge.JNIBridge$a -> bitter.jnibridge.JNIBridge$a:
@@ -24,21 +24,21 @@ com.google.androidgamesdk.SwappyDisplayManager$b -> com.google.androidgamesdk.Sw
 com.google.androidgamesdk.SwappyDisplayManager$b-IA -> a.b:
 # {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
 # {"id":"com.android.tools.r8.synthesized"}
-com.unity3d.player.A -> com.unity3d.player.A:
+com.unity3d.player.B -> com.unity3d.player.B:
     int -$$Nest$sfgeta() -> a
       # {"id":"com.android.tools.r8.synthesized"}
     int -$$Nest$sfgetb() -> b
       # {"id":"com.android.tools.r8.synthesized"}
     int -$$Nest$sfgetc() -> c
       # {"id":"com.android.tools.r8.synthesized"}
-com.unity3d.player.B -> com.unity3d.player.B:
-    android.content.Context -$$Nest$fgeta(com.unity3d.player.B) -> a
+com.unity3d.player.C -> com.unity3d.player.C:
+    android.content.Context -$$Nest$fgeta(com.unity3d.player.C) -> a
       # {"id":"com.android.tools.r8.synthesized"}
-    com.unity3d.player.UnityPlayer -$$Nest$fgetb(com.unity3d.player.B) -> b
+    com.unity3d.player.UnityPlayer -$$Nest$fgetb(com.unity3d.player.C) -> b
       # {"id":"com.android.tools.r8.synthesized"}
-    void -$$Nest$ma(com.unity3d.player.B,java.lang.String,boolean) -> c
+    void -$$Nest$ma(com.unity3d.player.C,java.lang.String,boolean) -> c
       # {"id":"com.android.tools.r8.synthesized"}
-    java.lang.String -$$Nest$mb(com.unity3d.player.B) -> d
+    java.lang.String -$$Nest$mb(com.unity3d.player.C) -> d
       # {"id":"com.android.tools.r8.synthesized"}
 com.unity3d.player.HFPStatus -> com.unity3d.player.HFPStatus:
     boolean -$$Nest$fgetc(com.unity3d.player.HFPStatus) -> a
@@ -51,15 +51,15 @@ com.unity3d.player.HFPStatus -> com.unity3d.player.HFPStatus:
       # {"id":"com.android.tools.r8.synthesized"}
     void -$$Nest$fputf(com.unity3d.player.HFPStatus,com.unity3d.player.HFPStatus$a) -> e
       # {"id":"com.android.tools.r8.synthesized"}
-com.unity3d.player.I -> com.unity3d.player.I:
-    com.unity3d.player.a -$$Nest$fgeta(com.unity3d.player.I) -> a
+com.unity3d.player.J -> com.unity3d.player.J:
+    com.unity3d.player.a -$$Nest$fgeta(com.unity3d.player.J) -> a
       # {"id":"com.android.tools.r8.synthesized"}
-    com.unity3d.player.UnityPlayer -$$Nest$fgetb(com.unity3d.player.I) -> b
+    com.unity3d.player.UnityPlayer -$$Nest$fgetb(com.unity3d.player.J) -> b
       # {"id":"com.android.tools.r8.synthesized"}
-    com.unity3d.player.w -$$Nest$fgetc(com.unity3d.player.I) -> c
+    com.unity3d.player.w -$$Nest$fgetc(com.unity3d.player.J) -> c
       # {"id":"com.android.tools.r8.synthesized"}
-com.unity3d.player.L -> com.unity3d.player.L:
-    void -$$Nest$fputb(com.unity3d.player.L,boolean) -> a
+com.unity3d.player.M -> com.unity3d.player.M:
+    void -$$Nest$fputb(com.unity3d.player.M,boolean) -> a
       # {"id":"com.android.tools.r8.synthesized"}
 com.unity3d.player.NetworkConnectivityNougat -> com.unity3d.player.NetworkConnectivityNougat:
     void -$$Nest$fputb(com.unity3d.player.NetworkConnectivityNougat,int) -> c
@@ -80,27 +80,6 @@ com.unity3d.player.ReflectionHelper$a -> com.unity3d.player.ReflectionHelper$a:
       # {"id":"com.android.tools.r8.synthesized"}
 com.unity3d.player.ReflectionHelper$b -> com.unity3d.player.ReflectionHelper$b:
     int -$$Nest$fgetd(com.unity3d.player.ReflectionHelper$b) -> a
-      # {"id":"com.android.tools.r8.synthesized"}
-com.unity3d.player.U -> com.unity3d.player.U:
-    com.unity3d.player.UnityPlayer -$$Nest$fgeta(com.unity3d.player.U) -> a
-      # {"id":"com.android.tools.r8.synthesized"}
-    android.content.Context -$$Nest$fgetb(com.unity3d.player.U) -> b
-      # {"id":"com.android.tools.r8.synthesized"}
-    java.util.concurrent.Semaphore -$$Nest$fgetd(com.unity3d.player.U) -> c
-      # {"id":"com.android.tools.r8.synthesized"}
-    java.util.concurrent.locks.Lock -$$Nest$fgete(com.unity3d.player.U) -> d
-      # {"id":"com.android.tools.r8.synthesized"}
-    com.unity3d.player.M -$$Nest$fgetf(com.unity3d.player.U) -> e
-      # {"id":"com.android.tools.r8.synthesized"}
-    boolean -$$Nest$fgeti(com.unity3d.player.U) -> f
-      # {"id":"com.android.tools.r8.synthesized"}
-    void -$$Nest$fputf(com.unity3d.player.U,com.unity3d.player.M) -> g
-      # {"id":"com.android.tools.r8.synthesized"}
-    void -$$Nest$fputg(com.unity3d.player.U,int) -> h
-      # {"id":"com.android.tools.r8.synthesized"}
-    void -$$Nest$fputi(com.unity3d.player.U,boolean) -> i
-      # {"id":"com.android.tools.r8.synthesized"}
-    void -$$Nest$ma(com.unity3d.player.U) -> j
       # {"id":"com.android.tools.r8.synthesized"}
 com.unity3d.player.UnityPlayer -> com.unity3d.player.UnityPlayer:
     void -$$Nest$mnativeSendSurfaceChangedEvent(com.unity3d.player.UnityPlayer) -> A
@@ -127,7 +106,7 @@ com.unity3d.player.UnityPlayer -> com.unity3d.player.UnityPlayer:
       # {"id":"com.android.tools.r8.synthesized"}
     android.content.Context -$$Nest$fgetmContext(com.unity3d.player.UnityPlayer) -> b
       # {"id":"com.android.tools.r8.synthesized"}
-    com.unity3d.player.I -$$Nest$fgetmGlView(com.unity3d.player.UnityPlayer) -> c
+    com.unity3d.player.J -$$Nest$fgetmGlView(com.unity3d.player.UnityPlayer) -> c
       # {"id":"com.android.tools.r8.synthesized"}
     int -$$Nest$fgetmInitialScreenOrientation(com.unity3d.player.UnityPlayer) -> d
       # {"id":"com.android.tools.r8.synthesized"}
@@ -135,15 +114,15 @@ com.unity3d.player.UnityPlayer -> com.unity3d.player.UnityPlayer:
       # {"id":"com.android.tools.r8.synthesized"}
     int -$$Nest$fgetmNaturalOrientation(com.unity3d.player.UnityPlayer) -> f
       # {"id":"com.android.tools.r8.synthesized"}
-    com.unity3d.player.C -$$Nest$fgetm_SplashScreen(com.unity3d.player.UnityPlayer) -> g
+    com.unity3d.player.D -$$Nest$fgetm_SplashScreen(com.unity3d.player.UnityPlayer) -> g
       # {"id":"com.android.tools.r8.synthesized"}
     com.unity3d.player.IUnityPlayerLifecycleEvents -$$Nest$fgetm_UnityPlayerLifecycleEvents(com.unity3d.player.UnityPlayer) -> h
       # {"id":"com.android.tools.r8.synthesized"}
     void -$$Nest$fputmQuitting(com.unity3d.player.UnityPlayer,boolean) -> i
       # {"id":"com.android.tools.r8.synthesized"}
-    void -$$Nest$fputmVideoPlayerProxy(com.unity3d.player.UnityPlayer,com.unity3d.player.U) -> j
+    void -$$Nest$fputmVideoPlayerProxy(com.unity3d.player.UnityPlayer,com.unity3d.player.V) -> j
       # {"id":"com.android.tools.r8.synthesized"}
-    void -$$Nest$fputm_SplashScreen(com.unity3d.player.UnityPlayer,com.unity3d.player.C) -> k
+    void -$$Nest$fputm_SplashScreen(com.unity3d.player.UnityPlayer,com.unity3d.player.D) -> k
       # {"id":"com.android.tools.r8.synthesized"}
     void -$$Nest$mDisableStaticSplashScreen(com.unity3d.player.UnityPlayer) -> l
       # {"id":"com.android.tools.r8.synthesized"}
@@ -184,6 +163,27 @@ com.unity3d.player.UnityPlayer$C-IA -> com.unity3d.player.b0:
 com.unity3d.player.UnityPlayer$D-IA -> com.unity3d.player.c0:
 # {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
 # {"id":"com.android.tools.r8.synthesized"}
+com.unity3d.player.V -> com.unity3d.player.V:
+    com.unity3d.player.UnityPlayer -$$Nest$fgeta(com.unity3d.player.V) -> a
+      # {"id":"com.android.tools.r8.synthesized"}
+    android.content.Context -$$Nest$fgetb(com.unity3d.player.V) -> b
+      # {"id":"com.android.tools.r8.synthesized"}
+    java.util.concurrent.Semaphore -$$Nest$fgetd(com.unity3d.player.V) -> c
+      # {"id":"com.android.tools.r8.synthesized"}
+    java.util.concurrent.locks.Lock -$$Nest$fgete(com.unity3d.player.V) -> d
+      # {"id":"com.android.tools.r8.synthesized"}
+    com.unity3d.player.N -$$Nest$fgetf(com.unity3d.player.V) -> e
+      # {"id":"com.android.tools.r8.synthesized"}
+    boolean -$$Nest$fgeti(com.unity3d.player.V) -> f
+      # {"id":"com.android.tools.r8.synthesized"}
+    void -$$Nest$fputf(com.unity3d.player.V,com.unity3d.player.N) -> g
+      # {"id":"com.android.tools.r8.synthesized"}
+    void -$$Nest$fputg(com.unity3d.player.V,int) -> h
+      # {"id":"com.android.tools.r8.synthesized"}
+    void -$$Nest$fputi(com.unity3d.player.V,boolean) -> i
+      # {"id":"com.android.tools.r8.synthesized"}
+    void -$$Nest$ma(com.unity3d.player.V) -> j
+      # {"id":"com.android.tools.r8.synthesized"}
 com.unity3d.player.a.a -> b.a:
 com.unity3d.player.a.b -> b.b:
 com.unity3d.player.a.c -> b.c:
